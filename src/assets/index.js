@@ -3,7 +3,7 @@ export { default as mensText } from "./mens-text.svg";
 export { default as mensTextExpanded } from "./mens-text-expanded.svg";
 export { default as footsieTextWhite } from "./footsie-white.svg";
 export { default as footsieTextGray } from "./footsie-gray.svg";
-export { default as LoafersText } from "./loafers-text.svg";
+export { default as LoafersText } from "./loafer-text.svg";
 // Icons
 export { default as menuIcon } from "./icons/menu-icon.svg";
 export { default as arrowDown } from "./icons/arrow-down.svg";
