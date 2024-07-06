@@ -28,7 +28,7 @@ body {
 
 .max-screen-width {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1550px;
   margin: auto;
   padding: var(--sect-py-mobile) var(--sect-px-mobile);
 }

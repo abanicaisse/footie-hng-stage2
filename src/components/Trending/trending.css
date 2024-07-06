@@ -1,0 +1,39 @@
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.trending > .trending-header {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.trending > .trending-header > div:first-of-type > h1 {
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+}
+
+.trending > .trending-header > div:first-of-type > p {
+  display: none;
+}
+
+.trending > .trending-header > div:last-of-type {
+  color: var(--color-orange);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trending-products {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  /* background-color: red; */
+}

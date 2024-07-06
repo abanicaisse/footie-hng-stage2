@@ -1,0 +1,63 @@
+.shoe-card {
+  position: relative;
+  background-color: transparent;
+  max-width: 360px;
+  border-radius: 3.125rem;
+  padding: 0 0;
+  margin-bottom: 1rem;
+}
+
+.shoe-card > img {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.shoe-card > div:first-of-type {
+  color: var(--color-white);
+  margin-top: -7rem;
+  margin-left: 2.1875rem;
+}
+
+.shoe-card > div .shoe-name {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: light;
+  line-height: 24px;
+  letter-spacing: -0.05em;
+}
+
+.shoe-card > div .shoe-category {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 19px;
+  margin-bottom: 0.5rem;
+}
+
+.shoe-card > div .shoe-price {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.05em;
+}
+
+.shoe-card > div:last-of-type {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  margin-top: 2.875rem;
+}
+
+.shoe-card > div:last-of-type a {
+  color: var(--color-orange);
+  text-decoration: none;
+  font-size: 1rem;
+  /* line-height: 19px; */
+}
