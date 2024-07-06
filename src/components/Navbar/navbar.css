@@ -1,0 +1,61 @@
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  cursor: pointer;
+  padding: var(--sect-py-mobile) var(--sect-px-mobile); /* 19px 35px */
+}
+
+nav .menu {
+  width: 34px;
+  height: 8px;
+}
+
+nav #nav-links {
+  position: absolute;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-radius: 0.625rem;
+  padding: 1.1875rem 2rem;
+  top: 100%;
+  /* transform: translateX(-200%); */
+  /* left: -100%; */
+}
+
+nav .nav-links p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  letter-spacing: -0.03em;
+  color: var(--color-black);
+}
+
+nav > .cart {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav > .cart > img {
+  width: 12px;
+  height: 12px;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    padding: var(--sect-py-desktop) var(--sect-px-desktop); /* 74px 88px */
+  }
+  nav .logo {
+    width: 70px;
+    height: 24px;
+  }
+
+  nav .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+}
