@@ -4,7 +4,7 @@
 
 body {
   /* background-color: var(--color-white); */
-  background-color: darkgray;
+  background-color: lightcyan;
 }
 
 :root {
@@ -30,4 +30,11 @@ body {
   width: 100%;
   max-width: 1500px;
   margin: auto;
+  padding: var(--sect-py-mobile) var(--sect-px-mobile);
+}
+
+@media screen and (min-width: 800px) {
+  .max-screen-width {
+    padding: var(--sect-py-desktop) var(--sect-px-desktop);
+  }
 }

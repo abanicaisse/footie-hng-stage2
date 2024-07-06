@@ -1,5 +1,10 @@
+header {
+  background-color: transparent;
+}
+
 nav {
   position: relative;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +21,7 @@ nav .menu {
 nav #nav-links {
   position: absolute;
   background-color: var(--color-white);
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 1.25rem;
   border-radius: 0.625rem;

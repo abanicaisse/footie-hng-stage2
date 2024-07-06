@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Navbar } from "../../components";
+import { Navbar, Hero } from "../../components";
 
 import "./home.css";
 
@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
+      <Hero />
     </>
   );
 };
