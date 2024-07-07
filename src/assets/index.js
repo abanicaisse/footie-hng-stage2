@@ -15,6 +15,7 @@ export { default as cartIconEmpty } from "./icons/cart-icon-empty.svg";
 export { default as cartIconFilled } from "./icons/cart-icon-filled.svg";
 export { default as searchIconEmpty } from "./icons/search-icon-empty.svg";
 export { default as searchIconFilled } from "./icons/search-icon-filled.svg";
+export { default as searchIconBlack } from "./icons/search-icon-black.svg";
 // Display Shoes
 export { default as shoe1 } from "./display-shoes/shoe-1.png";
 export { default as shoe2 } from "./display-shoes/shoe-2.png";

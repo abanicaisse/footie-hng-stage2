@@ -1,3 +1,6 @@
+section {
+}
+
 .showcase img {
   width: 100%;
 }
@@ -10,6 +13,8 @@
     "showcase-slider"
     "shoes-text"
     "vertical-shoe";
+  /* background-color: red; */
+  margin-top: -4rem;
 }
 
 .vertical-shoe {
@@ -53,7 +58,10 @@
 }
 
 .shoes-text {
+  /* background-color: red; */
   grid-area: shoes-text;
+  padding: 0;
+  margin-top: -2rem;
 }
 
 .shoes-text > h1 {
@@ -74,6 +82,7 @@
   overflow: scroll;
   margin: auto;
   padding: var(--sect-py-mobile) var(--sect-px-mobile);
+  margin-top: -2.5rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -90,6 +99,7 @@
     row-gap: 1.875rem;
     margin: auto;
     padding: var(--sect-py-desktop) var(--sect-px-desktop);
+    margin-top: -9rem;
   }
 
   .vertical-shoe {
@@ -158,5 +168,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+    margin-top: 0rem;
   }
 }

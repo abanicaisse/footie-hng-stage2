@@ -34,6 +34,28 @@ body {
   padding: var(--sect-py-mobile) var(--sect-px-mobile);
 }
 
+.search {
+  width: max-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  width: 234px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--color-black);
+  padding: 0.5rem 0.05rem;
+}
+
+.search > label {
+  position: absolute;
+  right: 0;
+}
+
 @media screen and (min-width: 800px) {
   .max-screen-width {
     padding: var(--sect-py-desktop) var(--sect-px-desktop);

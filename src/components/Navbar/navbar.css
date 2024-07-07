@@ -36,13 +36,17 @@ nav .nav-links p {
   font-size: 1rem;
   line-height: 1.1875rem;
   letter-spacing: -0.03em;
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 nav > .cart {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+nav > .cart > p {
+  color: var(--color-white);
 }
 
 nav > .cart > img {

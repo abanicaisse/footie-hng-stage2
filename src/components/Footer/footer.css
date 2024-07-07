@@ -1,0 +1,65 @@
+footer {
+  border-top: 2px solid var(--color-black);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer > div:first-of-type {
+  display: grid;
+  align-items: center;
+}
+
+footer > div > div {
+  display: none;
+}
+
+footer > div > h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 89.2373px;
+  line-height: 108px;
+  color: #1c1b1a;
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 800px) {
+  footer {
+    border-top: 2px solid var(--color-black);
+    padding-top: 0rem;
+    /* padding-bottom: 2rem; */
+  }
+  footer > div:first-of-type {
+    display: grid;
+    align-items: center;
+    row-gap: 3.75rem;
+  }
+  footer > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer > div > div .footer-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  footer > div > div .footer-links a {
+    color: var(--color-black);
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: -0.03em;
+  }
+
+  footer > div > h1 {
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 172px;
+    /* identical to box height */
+
+    /* E commerce black */
+    color: #1c1b1a;
+  }
+}
