@@ -2,8 +2,18 @@ import React from "react";
 
 import "./cart.css";
 
+import { Navbar, Footer, Hero, CartItem, Trending } from "../../components";
+
 const Cart = () => {
-  return <div>Cart</div>;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <CartItem />
+      <Trending />
+      <Footer />
+    </>
+  );
 };
 
 export default Cart;
