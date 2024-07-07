@@ -1,0 +1,362 @@
+.checkout-product {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.5px solid var(--color-black);
+}
+
+.checkout-product > .checkout-product-img {
+  flex: 0.3;
+}
+
+.checkout-product > .checkout-product-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.checkout-product > .checkout-product-detail {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: start;
+}
+
+.checkout-product-detail > .shoe-details {
+  width: 100%;
+  text-align: right;
+  display: grid;
+  justify-content: end;
+  align-items: start;
+}
+
+.shoe-details > .shoe-name {
+  margin-bottom: 0.625rem;
+}
+
+.shoe-details > .shoe-name > p:first-child {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+}
+
+.shoe-details > .shoe-name > p:last-child {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+}
+
+.shoe-details > .shoe-size-qty {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.625rem;
+}
+
+.shoe-size-qty > .size > p:first-of-type,
+.shoe-size-qty > .qty > p:first-of-type {
+  display: none;
+}
+
+.shoe-size-qty > .size > p:last-of-type,
+.shoe-size-qty > .qty > p:last-of-type {
+  padding: 9px 14px;
+  gap: 5px;
+  border: 0.624378px solid #1c1b1a;
+  border-radius: 3.12189px;
+}
+
+.shoe-details > .shoe-color-picker {
+  width: fit-content;
+  justify-self: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.shoe-color-picker > .white {
+  width: 43px;
+  height: 43px;
+  background-color: var(--product-white);
+  border-radius: 50%;
+}
+
+.shoe-color-picker > p:last-of-type {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 6px;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.checkout-product .checkout-product-price {
+  width: 100%;
+  color: var(--color-black);
+  text-align: right;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+}
+
+.total-section {
+  width: 100%;
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.total-section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid var(--color-black);
+  padding-bottom: 0.5rem;
+}
+
+.total-section > div:last-of-type {
+  border: none;
+}
+
+.total-section > div > p:first-of-type {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+}
+
+.total-section > div > p:last-of-type {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+}
+
+.total-section > div > p:last-of-type > span {
+  color: var(--color-orange);
+}
+
+.payment {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.payment > div {
+  display: grid;
+  gap: 1rem;
+}
+
+.payment > div > h1 {
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+}
+
+.payment > div > div {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.payment > div > div > p {
+  width: 65px;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  text-align: center;
+  padding: 15px 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+}
+
+.payment > div > div > p:last-of-type {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border: 0.5px solid var(--color-black);
+}
+
+.payment > form {
+  display: grid;
+  row-gap: 20px;
+}
+
+.payment > form input {
+  border: 0.5px solid var(--color-black);
+  border-radius: 10px;
+  padding: 15px 13.9882px;
+}
+
+.payment > form > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.payment > button {
+  background-color: var(--color-orange);
+  padding: 20px 30px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+}
+
+.checkout-container > a {
+  display: block;
+  text-align: center;
+  color: var(--color-orange);
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .checkout-product > .checkout-product-detail {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .shoe-details > .shoe-name {
+    margin-bottom: 1.5rem;
+  }
+
+  .shoe-details > .shoe-name > p:first-child {
+    font-size: 39.2053px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+  }
+
+  .shoe-details > .shoe-name > p:last-child {
+    font-size: 31.3642px;
+    line-height: 38px;
+  }
+
+  .checkout-product-detail > .shoe-details {
+    grid-template-areas:
+      "shoe-name"
+      "shoe-color-picker"
+      "shoe-size-qty";
+    text-align: left;
+    justify-content: start;
+  }
+
+  .shoe-details > .shoe-color-picker {
+    grid-area: shoe-color-picker;
+    justify-self: left;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .shoe-color-picker > .white {
+    width: 57px;
+    height: 57px;
+  }
+
+  .shoe-color-picker > p:last-of-type {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .shoe-size-qty > .size,
+  .shoe-size-qty > .qty {
+    display: flex;
+  }
+
+  .shoe-size-qty > .size > p:first-of-type,
+  .shoe-size-qty > .qty > p:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 49px;
+  }
+
+  .shoe-size-qty > .size > p:last-of-type,
+  .shoe-size-qty > .qty > p:last-of-type {
+    padding: 21.5px 50px;
+  }
+
+  .checkout-product .checkout-product-price {
+    font-weight: 600;
+    font-size: 39.2053px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+  }
+
+  .total-section {
+    margin-top: 5rem;
+  }
+
+  .total-section > div > p:first-of-type {
+    font-size: 39.2053px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+  }
+
+  .total-section > div > p:last-of-type {
+    font-weight: 600;
+    font-size: 39.2053px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+  }
+
+  .payment {
+    margin-top: 5rem;
+  }
+
+  .payment > div > h1 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 53px;
+    letter-spacing: -0.05em;
+  }
+
+  .payment > div > div {
+    gap: 1.25rem;
+  }
+
+  .payment > div > div > p {
+    padding: 40px 96px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .payment > form {
+    row-gap: 56px;
+  }
+
+  .payment > form input {
+    border-radius: 20px;
+    padding: 40px 48px;
+  }
+
+  .payment > form > div {
+    gap: 20px;
+  }
+
+  .payment > button {
+    color: var(--color-black);
+    padding: 40px 48px;
+    border-radius: 20px;
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 19.5207px;
+    line-height: 24px;
+  }
+}

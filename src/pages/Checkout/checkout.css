@@ -1,0 +1,30 @@
+.checkout-section > header {
+  background-color: var(--color-black);
+}
+
+.checkout-section > .checkout {
+  display: grid;
+  row-gap: 3rem;
+}
+
+.checkout img {
+  width: 100%;
+}
+
+.checkout > h1 {
+  color: var(--color-black);
+  text-align: center;
+  font-weight: 700;
+  font-size: 76.4693px;
+  line-height: 93px;
+  letter-spacing: -0.08em;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .checkout > h1 {
+    font-size: 181.137px;
+    line-height: 219px;
+    letter-spacing: -0.08em;
+  }
+}
