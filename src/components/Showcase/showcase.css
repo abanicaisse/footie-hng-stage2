@@ -1,0 +1,162 @@
+.showcase img {
+  width: 100%;
+}
+
+.showcase {
+  /* background-color: lightcyan; */
+  display: grid;
+  grid-template-areas:
+    "mens-text"
+    "showcase-slider"
+    "shoes-text"
+    "vertical-shoe";
+}
+
+.vertical-shoe {
+  background-color: var(--color-gray);
+  width: 100%;
+  max-width: 1550px;
+  height: 740px;
+  display: grid;
+  place-items: center;
+  grid-area: vertical-shoe;
+  padding: 0;
+  margin: 0;
+  margin: auto;
+  padding: var(--sect-py-mobile) var(--sect-px-mobile);
+}
+
+.vertical-shoe > img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 699px;
+}
+
+.mens-text,
+.shoes-text {
+  grid-area: mens-text;
+  width: 100%;
+  display: grid;
+  margin: auto;
+  padding: var(--sect-py-mobile) var(--sect-px-mobile);
+}
+
+.mens-text > h1,
+.shoes-text > h1 {
+  color: var(--color-orange);
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 154px;
+  letter-spacing: -0.08em;
+  margin: auto;
+}
+
+.shoes-text {
+  grid-area: shoes-text;
+}
+
+.shoes-text > h1 {
+  color: var(--color-black);
+  margin: auto;
+}
+
+.showcase-shoe {
+  display: none;
+  margin: auto;
+  padding: var(--sect-py-mobile) var(--sect-px-mobile);
+}
+
+.showcase-slider {
+  grid-area: showcase-slider;
+
+  display: grid;
+  overflow: scroll;
+  margin: auto;
+  padding: var(--sect-py-mobile) var(--sect-px-mobile);
+}
+
+@media screen and (min-width: 1200px) {
+  .showcase {
+    max-width: 1550px;
+
+    display: grid;
+    grid-template-areas:
+      "vertical-shoe mens-text mens-text"
+      "vertical-shoe shoes-text shoes-text"
+      "vertical-shoe showcase-shoe showcase-shoe"
+      "showcase-slider showcase-slider showcase-slider";
+    column-gap: 1.5rem;
+    row-gap: 1.875rem;
+    margin: auto;
+    padding: var(--sect-py-desktop) var(--sect-px-desktop);
+  }
+
+  .vertical-shoe {
+    grid-area: vertical-shoe;
+    width: 428px;
+    height: 100%;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vertical-shoe > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mens-text,
+  .shoes-text {
+    width: 100%;
+    grid-area: mens-text;
+    margin-left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mens-text > h1,
+  .shoes-text > h1 {
+    color: var(--color-orange);
+    font-weight: 700;
+    font-size: 220.311px;
+    letter-spacing: -0.15em;
+    margin-left: -1.5rem;
+    padding: 3.5rem 0 0 0;
+  }
+
+  .mens-text > h1 {
+    margin-bottom: -0.5rem;
+  }
+
+  .shoes-text {
+    grid-area: shoes-text;
+    margin-top: -4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .shoes-text > h1 {
+    color: var(--color-black);
+  }
+
+  .showcase-shoe {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .showcase-shoe > div {
+    width: 400px;
+  }
+
+  .showcase-slider {
+    grid-area: showcase-slider;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+}

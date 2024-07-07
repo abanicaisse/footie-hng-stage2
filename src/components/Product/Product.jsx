@@ -31,7 +31,7 @@ const Product = ({ img, name, price, category }) => {
       <div>
         <p className="shoe-name">{name}</p>
         <p className="shoe-category">{category}</p>
-        <p className="shoe-price">{price}</p>
+        <p className="shoe-price">${price}</p>
       </div>
 
       <div className="product-add-to-bag">
@@ -39,15 +39,6 @@ const Product = ({ img, name, price, category }) => {
         <img src={arrowRightOrange} alt="explore" />
       </div>
     </div>
-    // <div className="shoe-card">
-    //   <img src={productShoe1} alt={name} />
-    //   <div>
-    //     <p className="shoe-name">Loafer</p>
-    //     <p className="shoe-category">Men's</p>
-    //     <p className="shoe-price">$164.99</p>
-    //   </div>
-
-    // </div>
   );
 };
 
