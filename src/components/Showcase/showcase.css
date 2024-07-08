@@ -61,7 +61,7 @@ section {
   /* background-color: red; */
   grid-area: shoes-text;
   padding: 0;
-  margin-top: -2rem;
+  margin-top: 0rem;
 }
 
 .shoes-text > h1 {
@@ -76,14 +76,20 @@ section {
 }
 
 .showcase-slider {
+  /* width: 100%; */
   grid-area: showcase-slider;
-
+  /* background-color: red; */
   display: grid;
-  overflow: scroll;
   margin: auto;
-  padding: var(--sect-py-mobile) var(--sect-px-mobile);
+  padding: 0 var(--sect-px-mobile);
   margin-top: -2.5rem;
 }
+
+/* .showcase-slider > div {
+  background-color: green;
+  display: grid;
+  place-items: center;
+} */
 
 @media screen and (min-width: 1200px) {
   .showcase {
@@ -164,9 +170,6 @@ section {
   .showcase-slider {
     grid-area: showcase-slider;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0;
     margin-top: 0rem;
   }

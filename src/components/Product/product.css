@@ -5,12 +5,13 @@
   border-radius: 3.125rem;
   padding: 0 0;
   margin-bottom: 1rem;
+  margin: auto;
 }
 
 .shoe-card > img {
   width: 100%;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   z-index: -1;
 }
 
