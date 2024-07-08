@@ -1,5 +1,18 @@
-.checkout-section > header {
+.checkout-section > header > nav {
+  /* background-color: var(--product-white); */
+  /* background-color: darkcyan; */
+}
+
+.checkout-section > header > nav #nav-links {
   background-color: var(--color-black);
+}
+
+.checkout-section > header > nav #nav-links p {
+  color: var(--color-white);
+}
+
+.checkout-section > header > nav .nav-links p {
+  color: var(--color-black);
 }
 
 .checkout-section > .checkout {
@@ -26,5 +39,10 @@
     font-size: 181.137px;
     line-height: 219px;
     letter-spacing: -0.08em;
+    margin-top: -4rem;
+  }
+
+  .checkout-section > header > nav {
+    padding: 2.31rem 3rem;
   }
 }

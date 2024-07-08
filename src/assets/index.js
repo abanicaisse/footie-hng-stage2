@@ -6,6 +6,7 @@ export { default as footsieTextGray } from "./footsie-gray.svg";
 export { default as LoafersText } from "./loafer-text.svg";
 // Icons
 export { default as menuIcon } from "./icons/menu-icon.svg";
+export { default as menuIconBlack } from "./icons/menu-icon-black.png";
 export { default as arrowDown } from "./icons/arrow-down.svg";
 export { default as arrowDownBlack } from "./icons/arrow-down-black.svg";
 export { default as arrowUP } from "./icons/arrow-up.svg";
@@ -14,6 +15,7 @@ export { default as arrowRightOrange } from "./icons/arrow-right-orange.svg";
 export { default as arrowRightBlack } from "./icons/arrow-right-black.svg";
 export { default as arrowLeftOrange } from "./icons/arrow-left-orange.svg";
 export { default as cartIconEmpty } from "./icons/cart-icon-empty.svg";
+export { default as cartIconBlack } from "./icons/cart-icon-black.svg";
 export { default as cartIconFilled } from "./icons/cart-icon-filled.svg";
 export { default as searchIconEmpty } from "./icons/search-icon-empty.svg";
 export { default as searchIconFilled } from "./icons/search-icon-filled.svg";

@@ -74,8 +74,8 @@ const Navbar = () => {
           {windowWidth < 800 ? (
             <>
               <img src={searchIconEmpty} alt="" />
-              <Link to={"/cart"}>
-                <img src={cartIconEmpty} alt="" />
+              <Link to={"/cart"} className="search-icon">
+                <img src={cartIconEmpty} alt="" className="cart-icon" />
               </Link>
             </>
           ) : (

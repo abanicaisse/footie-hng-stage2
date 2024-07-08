@@ -1,13 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./checkout.css";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Navbar, Footer, CheckoutCard } from "../../components";
-import { productShoe1, arrowDownBlack } from "../../assets";
+import {
+  productShoe1,
+  arrowDownBlack,
+  menuIconBlack,
+  searchIconBlack,
+  cartIconBlack,
+} from "../../assets";
 
-const Checkout = () => {
+const Checkout = ({ windowWidth, setWindowWidth }) => {
+  useEffect(() => {
+    // if (windowWidth < 800) {
+    const menu = document.querySelector(
+      ".checkout-section > header > nav > .menu"
+    );
+    const search = document.querySelector(
+      ".checkout-section > header > nav > .cart .search-icon"
+    );
+    const cart = document.querySelector(
+      ".checkout-section > header > nav > .cart .cart-icon"
+    );
+    menu && menu.setAttribute("src", menuIconBlack);
+    search && search.setAttribute("src", searchIconBlack);
+    cart && cart.setAttribute("src", cartIconBlack);
+  }, []);
+
   return (
     <section className="checkout-section">
       <Navbar />
@@ -21,66 +43,3 @@ const Checkout = () => {
 };
 
 export default Checkout;
-
-// const Checkout = () => {
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 3,
-//   };
-
-{
-  /* <div className="slider-section">
-      <div>
-        <Slider {...settings}>
-          {data.map((product, i) => (
-            <div className="card">
-              <div>
-                <img src={product.img} alt="" />
-              </div>
-              <div>
-                <p>{product.name}</p>
-                <p>{product.reviw}</p>
-                <button>Read More</button>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
-
-const data = [
-  {
-    name: "Product 1",
-    img: productShoe1,
-    reviw:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, voluptate.",
-  },
-  {
-    name: "Product 1",
-    img: productShoe2,
-    reviw:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, voluptate.",
-  },
-  {
-    name: "Product 1",
-    img: productShoe3,
-    reviw:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, voluptate.",
-  },
-  {
-    name: "Product 1",
-    img: productShoe4,
-    reviw:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, voluptate.",
-  },
-  {
-    name: "Product 1",
-    img: productShoe5,
-    reviw:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, voluptate.",
-  },
-]; */
-}
