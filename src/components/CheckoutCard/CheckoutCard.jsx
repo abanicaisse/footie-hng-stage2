@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import { productShoe1, arrowDownBlack } from "../../assets";
 import "./checkout-card.css";
 
@@ -107,7 +109,7 @@ const CheckoutCard = () => {
 
         <button type="submit">Place order</button>
       </div>
-      <a href="#">Browse more shoes</a>
+      <Link to={"/"}>Browse more shoes</Link>
     </div>
   );
 };

@@ -21,10 +21,12 @@ export { default as searchIconBlack } from "./icons/search-icon-black.svg";
 // Display Shoes
 export { default as shoe1 } from "./display-shoes/shoe-1.png";
 export { default as shoe2 } from "./display-shoes/shoe-2.png";
+export { default as shoe2Mobile } from "./display-shoes/shoe-2-mobile.png";
 export { default as shoe3 } from "./display-shoes/shoe-3.png";
 export { default as shoe4 } from "./display-shoes/shoe-4.png";
 // Product Shoes
 export { default as productShoe1 } from "./products/product-shoe-1.png";
+export { default as productShoe1Mobile } from "./products/product-shoe-1-mobile.png";
 export { default as productShoe2 } from "./products/product-shoe-2.png";
 export { default as productShoe3 } from "./products/product-shoe-3.png";
 export { default as productShoe4 } from "./products/product-shoe-4.png";

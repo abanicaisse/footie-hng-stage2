@@ -45,7 +45,10 @@ nav > .cart {
   gap: 1rem;
 }
 
-nav > .cart > p {
+nav > .cart > a {
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
   color: var(--color-white);
 }
 

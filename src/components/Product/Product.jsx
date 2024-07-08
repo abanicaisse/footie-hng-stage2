@@ -3,6 +3,7 @@ import React from "react";
 import { arrowRightOrange, arrowRightWhite, productShoe1 } from "../../assets";
 
 import "./product.css";
+import { Link } from "react-router-dom";
 
 const Product = ({ img, name, price, category }) => {
   // onMouseOver={() => {
@@ -34,10 +35,10 @@ const Product = ({ img, name, price, category }) => {
         <p className="shoe-price">${price}</p>
       </div>
 
-      <div className="product-add-to-bag">
-        <a href="#">Add to bag</a>
+      <Link to={"/cart"} className="product-add-to-bag">
+        <span>Add to bag</span>
         <img src={arrowRightOrange} alt="explore" />
-      </div>
+      </Link>
     </div>
   );
 };

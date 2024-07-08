@@ -45,8 +45,9 @@
   letter-spacing: -0.05em;
 }
 
-.shoe-card > div:last-of-type {
+.shoe-card > .product-add-to-bag {
   width: fit-content;
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -54,14 +55,16 @@
   border-radius: 20px;
   padding: 1.5rem 2rem;
   margin-top: 2.875rem;
+  transition: all ease-in 300ms;
 }
 
-.shoe-card > div:last-of-type a {
+.shoe-card > .product-add-to-bag span {
   color: var(--color-orange);
   text-decoration: none;
   font-size: 1rem;
+  transition: all ease-in 300ms;
 }
 
-.shoe-card > div:last-of-type > img {
+.shoe-card > .product-add-to-bag > img {
   width: 26px;
 }

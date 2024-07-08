@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import { Link } from "react-router-dom";
+
 import {
   logo,
   menuIcon,
@@ -53,7 +55,9 @@ const Navbar = () => {
             </div>
           </>
         ) : (
-          <img src={logo} alt="logo" className="logo" />
+          <Link to={"/"} className="logo">
+            <img src={logo} alt="logo" className="logo" />
+          </Link>
         )}
 
         {windowWidth < 800 ? (
@@ -70,12 +74,16 @@ const Navbar = () => {
           {windowWidth < 800 ? (
             <>
               <img src={searchIconEmpty} alt="" />
-              <img src={cartIconEmpty} alt="" />
+              <Link to={"/cart"}>
+                <img src={cartIconEmpty} alt="" />
+              </Link>
             </>
           ) : (
             <>
-              <p>Your Bag</p>
-              <img src={cartIconEmpty} alt="" />
+              <Link to={"/cart"}>
+                <p>Your Bag</p>
+                <img src={cartIconEmpty} alt="" />
+              </Link>
             </>
           )}
         </div>

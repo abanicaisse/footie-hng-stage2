@@ -1,0 +1,75 @@
+.cart-hero > .hero-content > div {
+  /* background-color: black; */
+  margin-top: 10rem;
+  padding-left: 0;
+  margin-bottom: -3rem;
+}
+
+.cart-hero > .hero-content > .cart-hero-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-hero > .hero-content > .cart-hero-detail .shoe-name {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+}
+
+.cart-hero > .hero-content > .cart-hero-detail .shoe-category {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+}
+
+.cart-hero > .hero-content > .cart-hero-detail .shoe-price {
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+@media screen and (min-width: 800px) {
+  .cart-hero > .hero-content > .cart-hero-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cart-hero > .hero-content > h1,
+  .cart-hero > .hero-content .explore {
+    display: none;
+  }
+
+  .cart-hero > .hero-content > div {
+    margin-top: 22rem;
+    padding-left: var(--sect-px-desktop);
+  }
+
+  .cart-hero > .hero-content > div .shoe-name {
+    color: var(--color-white) !important;
+    font-size: 39.2053px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+  }
+  .cart-hero > .hero-content > div .shoe-category {
+    color: var(--color-white) !important;
+    font-weight: 400;
+    font-size: 31.3642px;
+    line-height: 38px;
+  }
+  .cart-hero > .hero-content > div .shoe-price {
+    color: var(--color-white) !important;
+    align-self: start;
+    font-weight: 600;
+    font-size: 39.2053px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+    margin-top: 21.5px;
+  }
+}

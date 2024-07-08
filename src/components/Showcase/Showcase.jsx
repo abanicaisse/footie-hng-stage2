@@ -23,8 +23,6 @@ const Showcase = () => {
         `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
       );
     },
-    autoplay: true,
-    autoplaySpeed: 2000,
     cssEase: "linear",
     responsive: [
       {

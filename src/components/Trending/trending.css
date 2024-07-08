@@ -2,13 +2,16 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding-top: -5rem;
 }
 
 .trending > .trending-header {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  padding-top: 1rem;
+  padding-top: 3rem;
+  margin-top: -2.5rem;
+  margin-bottom: -1rem;
 }
 
 .trending > .trending-header > div:first-of-type > h1 {

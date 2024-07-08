@@ -5,7 +5,7 @@
 body {
   font-family: var(--font-family);
   background-color: var(--color-white);
-  /* background-color: lightcyan; */
+  /* background-color: darkcyan; */
 }
 
 :root {

@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import "./cart-item.css";
 import { arrowDownBlack, arrowRightBlack } from "../../assets";
 const CartItem = () => {
@@ -62,7 +64,7 @@ const CartItem = () => {
           </div>
 
           <div className="go-checkout">
-            <a href="#">Proceed to checkout</a>
+            <Link to={"/checkout"}>Proceed to checkout</Link>
             <img src={arrowRightBlack} alt="go-checkout" />
           </div>
         </div>
