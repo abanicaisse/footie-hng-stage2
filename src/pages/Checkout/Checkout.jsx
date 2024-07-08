@@ -33,7 +33,7 @@ const Checkout = ({ windowWidth, setWindowWidth }) => {
   return (
     <section className="checkout-section">
       <Navbar />
-      <div className="max-screen-width checkout">
+      <div className="checkout">
         <h1 className="">Checkout</h1>
         <CheckoutCard />
       </div>

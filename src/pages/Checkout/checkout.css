@@ -1,5 +1,5 @@
 .checkout-section > header > nav {
-  /* background-color: var(--product-white); */
+  /* background-color: var(--color-black); */
   /* background-color: darkcyan; */
 }
 
@@ -16,8 +16,14 @@
 }
 
 .checkout-section > .checkout {
+  width: 100%;
   display: grid;
   row-gap: 3rem;
+  margin: auto;
+  max-width: 1550px;
+  margin: auto;
+  padding: var(--sect-py-mobile);
+  /* padding-left: 0; */
 }
 
 .checkout img {
