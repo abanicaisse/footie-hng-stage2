@@ -97,15 +97,6 @@ export const carouselShoes = [
   },
   {
     header: "Footsie",
-    desktopImg: shoe3,
-    mobileImg: shoe2Mobile,
-    desktopText:
-      "Through our collections we blur the borders between high fashion and high performance. Like our sneakers by Stella McCartney athletic clothing collection – designed to look the part inside and outside of the gym. Or some of our adidas Originals lifestyle pieces, that can be worn as sports apparel too.",
-    mobileText:
-      "Through our collections we blur the borders between high fashionand high performance. Like our sneakers by Stella McCartney athletic clothing collection",
-  },
-  {
-    header: "Footsie",
     desktopImg: shoe4,
     mobileImg: shoe2Mobile,
     desktopText:
