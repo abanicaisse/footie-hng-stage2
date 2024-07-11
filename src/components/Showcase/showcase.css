@@ -78,7 +78,6 @@ section {
 .showcase-slider {
   /* width: 100%; */
   grid-area: showcase-slider;
-  background-color: red;
   display: grid;
   gap: 5rem;
   margin: auto;
