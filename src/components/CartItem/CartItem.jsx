@@ -63,10 +63,10 @@ const CartItem = () => {
             </p>
           </div>
 
-          <div className="go-checkout">
-            <Link to={"/checkout"}>Proceed to checkout</Link>
+          <Link to={"/checkout"} className="go-checkout">
+            <p>Proceed to checkout</p>
             <img src={arrowRightBlack} alt="go-checkout" />
-          </div>
+          </Link>
         </div>
       </section>
     </>

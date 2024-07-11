@@ -13,7 +13,7 @@ const Showcase = () => {
   const settings = {
     dots: true,
     infinite: false,
-    speed: 5000,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -75,9 +75,7 @@ const Showcase = () => {
               />
             ))}
         </div>
-        {/* <div className="showcase-slider">
-          <p>Mobile slider</p> */}
-
+        {/* Mobile slider */}
         <Slider {...settings} className="showcase-slider">
           {shoeProducts
             .filter((product) => !product.vertical)
@@ -91,7 +89,6 @@ const Showcase = () => {
               />
             ))}
         </Slider>
-        {/* </div> */}
       </div>
     </section>
   );

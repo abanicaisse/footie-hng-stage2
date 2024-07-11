@@ -95,6 +95,7 @@
 }
 
 .cart-item > .go-checkout {
+  text-decoration: none;
   background-color: var(--color-orange);
   display: flex;
   flex-direction: row;
@@ -106,7 +107,7 @@
   margin-top: 1rem;
 }
 
-.go-checkout > a {
+.go-checkout > p {
   color: var(--color-white);
   text-decoration: none;
   font-weight: 500;
@@ -151,7 +152,7 @@
     margin-top: 3rem;
   }
 
-  .go-checkout > a {
+  .go-checkout > p {
     color: var(--color-black);
     text-decoration: none;
     font-weight: 500;

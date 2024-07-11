@@ -78,18 +78,13 @@ section {
 .showcase-slider {
   /* width: 100%; */
   grid-area: showcase-slider;
-  /* background-color: red; */
+  background-color: red;
   display: grid;
+  gap: 5rem;
   margin: auto;
   padding: 0 var(--sect-px-mobile);
   margin-top: -2.5rem;
 }
-
-/* .showcase-slider > div {
-  background-color: green;
-  display: grid;
-  place-items: center;
-} */
 
 @media screen and (min-width: 1200px) {
   .showcase {
