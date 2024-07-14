@@ -12,7 +12,7 @@ import "./hero-caroussel.css";
 import { arrowRightWhite, searchIconEmpty } from "../../assets";
 // import { carouselShoes } from "../../data/products";
 
-const HeroCaroussel = ({ windowWidth, carouselShoes }) => {
+const HeroCaroussel = ({ windowWidth, carouselShoes, allProducts }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -38,48 +38,44 @@ const HeroCaroussel = ({ windowWidth, carouselShoes }) => {
       modules={[Autoplay, EffectCube]}
       className="hero-section mySwiper"
     >
-      {!carouselShoes ? (
-        <></>
-      ) : (
-        carouselShoes?.map((shoe, i) => (
-          <SwiperSlide key={shoe?.unique_id} className="hero-container">
+      {allProducts?.slice(5, 10)?.map((shoe, i) => (
+        <SwiperSlide key={shoe?.unique_id} className="hero-container">
+          {windowWidth < 800 ? (
+            <img
+              src={`https://api.timbu.cloud/images/${shoe?.photos[0]?.url}`}
+              alt={shoe?.name}
+              className="carousel-img"
+            />
+          ) : (
+            <img
+              src={`https://api.timbu.cloud/images/${shoe?.photos[0]?.url}`}
+              alt={shoe?.name}
+              className="carousel-img"
+            />
+          )}
+          <div className="hero-content">
+            <h1 id="footsie">Footsie</h1>
             {windowWidth < 800 ? (
-              <img
-                src={`https://api.timbu.cloud/images/${shoe?.photos[0]?.url}`}
-                alt={shoe?.name}
-                className="carousel-img"
-              />
+              <p>{shoe?.description}</p>
             ) : (
-              <img
-                src={`https://api.timbu.cloud/images/${shoe?.photos[0]?.url}`}
-                alt={shoe?.name}
-                className="carousel-img"
-              />
+              <p>{shoe?.description}</p>
             )}
-            <div className="hero-content">
-              <h1 id="footsie">Footsie</h1>
-              {windowWidth < 800 ? (
-                <p>{shoe?.description}</p>
-              ) : (
-                <p>{shoe?.description}</p>
-              )}
 
-              <div className="explore">
-                <div>
-                  <a href="#">Explore</a>
-                  <img src={arrowRightWhite} alt="explore" />
-                </div>
-                <div className="search">
-                  <input type="search" placeholder="Search" />
-                  <label htmlFor="search">
-                    <img src={searchIconEmpty} alt="search" />
-                  </label>
-                </div>
+            <div className="explore">
+              <div>
+                <a href="#">Explore</a>
+                <img src={arrowRightWhite} alt="explore" />
+              </div>
+              <div className="search">
+                <input type="search" placeholder="Search" />
+                <label htmlFor="search">
+                  <img src={searchIconEmpty} alt="search" />
+                </label>
               </div>
             </div>
-          </SwiperSlide>
-        ))
-      )}
+          </div>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

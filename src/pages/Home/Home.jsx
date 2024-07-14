@@ -32,13 +32,13 @@ const Home = ({
         allProducts={allProducts}
         carouselShoes={carouselShoes}
       />
-      <Trending
+      {/* <Trending
         header={trendingHeader}
         orangeText={trendingOrangeTxt}
         icon={trendingIcon}
         allProducts={allProducts}
         trendingShoes={trendingShoes}
-      />
+      /> */}
       <Showcase allProducts={allProducts} />
       <Footer />
     </>
