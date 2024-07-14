@@ -5,7 +5,7 @@ import "./cart.css";
 import { Navbar, Footer, CartItem, Trending, CartHero } from "../../components";
 import { arrowRightOrange } from "../../assets";
 
-const Cart = ({ windowWidth, setWindowWidth, allProducts, trendingShoes }) => {
+const Cart = ({ windowWidth, setWindowWidth, allProducts }) => {
   const trendingHeader = "Similar Products";
   const trendingOrangeTxt = "Browse more";
   const trendingIcon = arrowRightOrange;
@@ -24,7 +24,7 @@ const Cart = ({ windowWidth, setWindowWidth, allProducts, trendingShoes }) => {
         header={trendingHeader}
         orangeText={trendingOrangeTxt}
         icon={trendingIcon}
-        trendingShoes={trendingShoes}
+        // trendingShoes={trendingShoes}
       />
       <Footer />
     </>

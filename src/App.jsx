@@ -62,8 +62,8 @@ const App = () => {
               setWindowWidth={setWindowWidth}
               allProducts={allProducts}
               setallProducts={setAllProducts}
-              trendingShoes={trendingShoes}
-              carouselShoes={carouselShoes}
+              // trendingShoes={trendingShoes}
+              // carouselShoes={carouselShoes}
             />
           }
         />
@@ -76,7 +76,7 @@ const App = () => {
               setWindowWidth={setWindowWidth}
               allProducts={allProducts}
               setallProducts={setAllProducts}
-              trendingShoes={trendingShoes}
+              // trendingShoes={trendingShoes}
             />
           }
         />
@@ -88,7 +88,7 @@ const App = () => {
               setWindowWidth={setWindowWidth}
               allProducts={allProducts}
               setallProducts={setAllProducts}
-              trendingShoes={trendingShoes}
+              // trendingShoes={trendingShoes}
             />
           }
         />
