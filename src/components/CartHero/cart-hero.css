@@ -36,6 +36,17 @@
 }
 
 @media screen and (min-width: 800px) {
+  .cart-hero > img {
+    background-color: red;
+    display: flex;
+    margin-top: -10rem;
+  }
+
+  .cart-hero > .hero-content {
+    /* background-color: red; */
+    margin-top: -5rem;
+  }
+
   .cart-hero > .hero-content > .cart-hero-detail {
     display: flex;
     flex-direction: column;

@@ -77,7 +77,6 @@
 }
 
 .shoe-size-qty > div > p {
-  /* background-color: blue; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,6 +126,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 1.5rem;
+    margin-top: -5rem;
   }
 
   .cart-item-desc > .shoe-desc {

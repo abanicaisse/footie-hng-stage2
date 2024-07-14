@@ -9,7 +9,7 @@ import { productShoeVert } from "../../assets";
 import { shoeProducts } from "../../data/products";
 import Product from "../Product/Product";
 
-const Showcase = () => {
+const Showcase = ({ allProducts }) => {
   const settings = {
     dots: true,
     infinite: false,
@@ -63,17 +63,15 @@ const Showcase = () => {
           <h1>Shoes</h1>
         </div>
         <div className="showcase-shoe">
-          {shoeProducts
-            .filter((product) => product.Showcase)
-            .map((shoe, i) => (
-              <Product
-                key={i}
-                img={shoe.img}
-                name={shoe.name}
-                category={shoe.category}
-                price={shoe.price}
-              />
-            ))}
+          {allProducts?.slice(6, 8)?.map((shoe, i) => (
+            <Product
+              key={shoe?.unique_id}
+              img={`https://api.timbu.cloud/images/${shoe?.photos[0]?.url}`}
+              name={shoe?.name}
+              price={shoe?.current_price[0]?.USD[0]}
+              category="Men"
+            />
+          ))}
         </div>
         {/* Mobile slider */}
         <Slider {...settings} className="showcase-slider">
@@ -81,13 +79,22 @@ const Showcase = () => {
             .filter((product) => !product.vertical)
             .map((shoe, i) => (
               <Product
-                key={i}
+                key={shoe.unique_id}
                 img={shoe.img}
                 name={shoe.name}
                 category={shoe.category}
                 price={shoe.price}
               />
             ))}
+          {allProducts?.slice(9, 15)?.map((shoe, i) => (
+            <Product
+              key={shoe?.unique_id}
+              img={`https://api.timbu.cloud/images/${shoe?.photos[0]?.url}`}
+              name={shoe?.name}
+              price={shoe?.current_price[0]?.USD[0]}
+              category="Men"
+            />
+          ))}
         </Slider>
       </div>
     </section>
