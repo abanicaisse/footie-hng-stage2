@@ -31,16 +31,16 @@ const App = () => {
     getUser();
   }, []);
 
-  const carouselShoes = [
-    allProducts[7],
-    allProducts[4],
-    allProducts[3],
-    allProducts[20],
-    allProducts[14],
-    allProducts[11],
-  ];
+  // const carouselShoes = [
+  //   allProducts[7],
+  //   allProducts[4],
+  //   allProducts[3],
+  //   allProducts[20],
+  //   allProducts[14],
+  //   allProducts[11],
+  // ];
 
-  const trendingShoes = [allProducts[6], allProducts[1], allProducts[5]];
+  // const trendingShoes = [allProducts[6], allProducts[1], allProducts[5]];
 
   // Handle Window Resizing
   useEffect(() => {
