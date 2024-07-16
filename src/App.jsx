@@ -14,6 +14,7 @@ const baseURL = `https://timbu-get-all-products.reavdev.workers.dev/?organizatio
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isLoadingData, setIsLoadingData] = useState(true);
 
   const [allProducts, setAllProducts] = useState([]);
 
@@ -23,6 +24,7 @@ const App = () => {
       try {
         const response = await axios.get(baseURL).then((data) => {
           setAllProducts(data?.data.items);
+          setIsLoadingData(false);
         });
       } catch (error) {
         console.log(error);
@@ -30,17 +32,6 @@ const App = () => {
     }
     getUser();
   }, []);
-
-  // const carouselShoes = [
-  //   allProducts[7],
-  //   allProducts[4],
-  //   allProducts[3],
-  //   allProducts[20],
-  //   allProducts[14],
-  //   allProducts[11],
-  // ];
-
-  // const trendingShoes = [allProducts[6], allProducts[1], allProducts[5]];
 
   // Handle Window Resizing
   useEffect(() => {
@@ -62,8 +53,8 @@ const App = () => {
               setWindowWidth={setWindowWidth}
               allProducts={allProducts}
               setallProducts={setAllProducts}
-              // trendingShoes={trendingShoes}
-              // carouselShoes={carouselShoes}
+              isLoadingData={isLoadingData}
+              setIsLoadingData={setIsLoadingData}
             />
           }
         />
@@ -76,7 +67,6 @@ const App = () => {
               setWindowWidth={setWindowWidth}
               allProducts={allProducts}
               setallProducts={setAllProducts}
-              // trendingShoes={trendingShoes}
             />
           }
         />
@@ -88,7 +78,8 @@ const App = () => {
               setWindowWidth={setWindowWidth}
               allProducts={allProducts}
               setallProducts={setAllProducts}
-              // trendingShoes={trendingShoes}
+              isLoadingData={isLoadingData}
+              setIsLoadingData={setIsLoadingData}
             />
           }
         />

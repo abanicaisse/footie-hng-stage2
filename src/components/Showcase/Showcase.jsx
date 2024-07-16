@@ -9,7 +9,9 @@ import { productShoeVert } from "../../assets";
 import { shoeProducts } from "../../data/products";
 import Product from "../Product/Product";
 
-const Showcase = ({ allProducts }) => {
+import { Circles } from "react-loader-spinner";
+
+const Showcase = ({ allProducts, isLoadingData, setIsLoadingData }) => {
   const settings = {
     dots: true,
     infinite: false,
@@ -50,54 +52,74 @@ const Showcase = ({ allProducts }) => {
     ],
   };
 
+  !allProducts && setIsLoadingData(true);
+
   return (
-    <section>
-      <div className="showcase">
-        <div className="vertical-shoe">
-          <img src={productShoeVert} alt="men-loafer" />
+    <>
+      {isLoadingData && (
+        <div className="section-loader">
+          <Circles
+            height="80"
+            width="80"
+            color="#f97e2f"
+            ariaLabel="circles-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+            visible={true}
+          />
         </div>
-        <div className="mens-text">
-          <h1>Men's</h1>
-        </div>
-        <div className="shoes-text">
-          <h1>Shoes</h1>
-        </div>
-        <div className="showcase-shoe">
-          {allProducts?.slice(6, 8)?.map((shoe, i) => (
-            <Product
-              key={shoe?.unique_id}
-              img={`https://api.timbu.cloud/images/${shoe?.photos[0]?.url}`}
-              name={shoe?.name}
-              price={shoe?.current_price[0]?.USD[0]}
-              category="Men"
-            />
-          ))}
-        </div>
-        {/* Mobile slider */}
-        <Slider {...settings} className="showcase-slider">
-          {shoeProducts
-            .filter((product) => !product.vertical)
-            .map((shoe, i) => (
-              <Product
-                key={shoe.unique_id}
-                img={shoe.img}
-                name={shoe.name}
-                category={shoe.category}
-                price={shoe.price}
-              />
-            ))}
-          {allProducts?.slice(9, 15)?.map((shoe, i) => (
-            <Product
-              key={shoe?.unique_id}
-              img={`https://api.timbu.cloud/images/${shoe?.photos[0]?.url}`}
-              name={shoe?.name}
-              price={shoe?.current_price[0]?.USD[0]}
-              category="Men"
-            />
-          ))}
-        </Slider>
-      </div>
-    </section>
+      )}
+
+      {!isLoadingData && allProducts && (
+        <section>
+          <div className="showcase">
+            <div className="vertical-shoe">
+              <img src={productShoeVert} alt="men-loafer" />
+            </div>
+            <div className="mens-text">
+              <h1>Men's</h1>
+            </div>
+            <div className="shoes-text">
+              <h1>Shoes</h1>
+            </div>
+            <div className="showcase-shoe">
+              {allProducts?.slice(6, 8)?.map((shoe, i) => (
+                <Product
+                  key={shoe?.unique_id}
+                  img={`https://api.timbu.cloud/images/${shoe?.photos[0]?.url}`}
+                  name={shoe?.name}
+                  price={shoe?.current_price[0]?.USD[0]}
+                  category="Men"
+                />
+              ))}
+            </div>
+            {/* Mobile slider */}
+            <Slider {...settings} className="showcase-slider">
+              {shoeProducts
+                .filter((product) => !product.vertical)
+                .map((shoe, i) => (
+                  <Product
+                    key={shoe.unique_id}
+                    img={shoe.img}
+                    name={shoe.name}
+                    category={shoe.category}
+                    price={shoe.price}
+                  />
+                ))}
+              {allProducts?.slice(9, 15)?.map((shoe, i) => (
+                <Product
+                  key={shoe?.unique_id}
+                  img={`https://api.timbu.cloud/images/${shoe?.photos[0]?.url}`}
+                  name={shoe?.name}
+                  price={shoe?.current_price[0]?.USD[0]}
+                  category="Men"
+                />
+              ))}
+            </Slider>
+          </div>
+        </section>
+      )}
+    </>
   );
 };
 

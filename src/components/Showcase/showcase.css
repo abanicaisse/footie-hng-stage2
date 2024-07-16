@@ -1,4 +1,15 @@
-section {
+.section-loader {
+  width: 100%;
+  max-width: 1550px;
+  display: grdi;
+  place-content: center;
+  margin: 0rem auto 4rem auto;
+  padding: 4rem 0;
+}
+
+.section-loader > div {
+  width: max-content;
+  margin: 0 auto;
 }
 
 .showcase img {

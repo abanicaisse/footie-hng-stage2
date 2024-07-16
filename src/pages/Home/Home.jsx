@@ -16,6 +16,8 @@ const Home = ({
   windowWidth,
   setWindowWidth,
   allProducts,
+  isLoadingData,
+  setIsLoadingData,
   carouselShoes,
   trendingShoes,
 }) => {
@@ -27,19 +29,23 @@ const Home = ({
     <>
       <Navbar windowWidth={windowWidth} setWindowWidth={setWindowWidth} />
       <HeroCaroussel
-        windowWidth={windowWidth}
-        setWindowWidth={setWindowWidth}
         allProducts={allProducts}
+        isLoadingData={isLoadingData}
+        setIsLoadingData={setIsLoadingData}
         carouselShoes={carouselShoes}
       />
-      {/* <Trending
+      <Trending
         header={trendingHeader}
         orangeText={trendingOrangeTxt}
         icon={trendingIcon}
         allProducts={allProducts}
         trendingShoes={trendingShoes}
-      /> */}
-      <Showcase allProducts={allProducts} />
+      />
+      <Showcase
+        allProducts={allProducts}
+        isLoadingData={isLoadingData}
+        setIsLoadingData={setIsLoadingData}
+      />
       <Footer />
     </>
   );
