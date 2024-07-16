@@ -22,7 +22,8 @@ const HeroCaroussel = ({ isLoadingData, setIsLoadingData, allProducts }) => {
     slidesToScroll: 1,
   };
 
-  !allProducts && setIsLoadingData(true);
+  // !allProducts && setIsLoadingData(true);
+  console.log(allProducts);
 
   return (
     <>
